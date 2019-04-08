@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+<bean  id="mdi" class="com.nt.beans.MobileDeviceInfo" dependency-check="objects">
+<property name="number" value="8885213771"/>
+<property name="imeiNo" value="4445555"/>
+<property name="make" value="apple"/>
+</bean>
+<bean id="person" class="com.nt.beans.Person" dependency-check="objects">
+<property name="id" value="803"/>
+<property name="name" value="Ashok"/>
+<property name="desg" value="software"/>
+<property name="mobile" ref="mdi"/>
+</bean>
+</beans>

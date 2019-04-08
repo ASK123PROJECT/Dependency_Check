@@ -7,6 +7,7 @@ import com.nt.beans.Person;
 public class Dependency_CheckTest {
 
 	public static void main(String[] args) {
+                System.out.println("this is Spring Project");
 		System.out.println("Dependency_CheckTest.main():start");
 		DefaultListableBeanFactory factory=null;
 		XmlBeanDefinitionReader reader=null;
